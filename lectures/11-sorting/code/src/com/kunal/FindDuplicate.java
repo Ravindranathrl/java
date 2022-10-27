@@ -2,9 +2,15 @@ package com.kunal;
 // https://leetcode.com/problems/find-the-duplicate-number/
 public class FindDuplicate {
     public int findDuplicate(int[] arr) {
-        int i = 0;
+        [1,2,3,4,5]
+        [1,3,4,2,2]
+        [1,4,3,2,2]
+        [1,2,3,4,2]
+        [0,1,2,3,4]
+        
+        int i = 0; 
         while (i < arr.length) {
-
+            
             if (arr[i] != i + 1) {
                 int correct = arr[i] - 1;
                 if (arr[i] != arr[correct]) {
